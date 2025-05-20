@@ -1,0 +1,18 @@
+package app;
+import clases.TrianguloRectangulo;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		TrianguloRectangulo t = new TrianguloRectangulo(4,2);
+		TrianguloRectangulo t2 = new TrianguloRectangulo();
+		
+		t.calcularArea();
+		t.calcularPerimetro();
+		t2.calcularArea();
+		t2.calcularPerimetro();
+		
+		
+		
+	}
+}

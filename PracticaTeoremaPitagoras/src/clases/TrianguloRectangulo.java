@@ -11,7 +11,7 @@ double c;
  * @param b
  * @param c
  */
-public TrianguloRectangulo(double a, double b,double c) {
+public TrianguloRectangulo(double a, double b) {
     if (a <= 0 || b <= 0) {
         throw new IllegalArgumentException("Los catetos deben ser mayores que 0.");
     }
@@ -39,7 +39,8 @@ public TrianguloRectangulo() {
  * @return el area de un triangulo rectangulo en metros
  */
 public double calcularArea() {
-	return (a*b)/2;
+	double area=(a*b)/2;
+	return area;
 }
 
 /**
@@ -55,7 +56,8 @@ public double calcularHipotenusa() {
  * @return el perimetro de un triangulo rectangulo en metros
  */
 public double calcularPerimetro() {
-	return a+b+c;
+	double perimetro=a+b+c;
+	return perimetro;
 }
 
 public double getCateto1() {
