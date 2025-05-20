@@ -1,0 +1,56 @@
+package tests;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import clases.TrianguloRectangulo;
+
+class testTrianguloRectangulo {
+
+	@Test
+	void testArea() {
+		TrianguloRectangulo t1= new TrianguloRectangulo();
+		//Calculamos el area que nos da el metodo
+		double areaObtenida1 = t1.calcularArea(); 
+		//Hardcodeamos el area que sabemos que debe tener
+		double	areaEsperada1= 0.5;
+		assertEquals(areaEsperada1, areaObtenida1);
+		TrianguloRectangulo t2= new TrianguloRectangulo(4,5);
+		//Calculamos el area que nos da el metodo
+		double areaObtenida2 = t2.calcularArea(); 
+		//Hardcodeamos el area que sabemos que debe tener
+		double	areaEsperada2= 10;
+		assertEquals(areaEsperada2, areaObtenida2);
+	}
+	@Test
+	void testHipotenusa() {
+		TrianguloRectangulo t1= new TrianguloRectangulo();
+		//Calculamos la hipotenusa que nos da el metodo
+		double hipotenusaObtenida1 = t1.calcularHipotenusa(); 
+		//Hardcodeamos la hipotenusa que sabemos que debe tener
+		double	hipotenusaEsperada1= 1.4142;
+		assertEquals(hipotenusaEsperada1, hipotenusaObtenida1);
+		TrianguloRectangulo t2= new TrianguloRectangulo(4,5);
+		//Calculamos la hipotenusa que nos da el metodo
+		double hipotenusaObtenida2 = t2.calcularHipotenusa(); 
+		//Hardcodeamos la hipotenusa que sabemos que debe tener
+		double	hipotenusaEsperada2= 6.403;
+		assertEquals(hipotenusaEsperada2, hipotenusaObtenida2);
+	}
+	@Test
+	void testPerimetro() {
+		TrianguloRectangulo t1= new TrianguloRectangulo();
+		//Calculamos el perimetro que nos da el metodo
+		double perimetroObtenida1 = t1.calcularPerimetro(); 
+		//Hardcodeamos el perimetro que sabemos que debe tener
+		double	perimetroEsperada1= 1.4142;
+		assertEquals(perimetroEsperada1, perimetroObtenida1);
+		TrianguloRectangulo t2= new TrianguloRectangulo(4,5);
+		//Calculamos el perimetro que nos da el metodo
+		double perimetroObtenida2 = t2.calcularPerimetro(); 
+		//Hardcodeamos la hipotenusa que sabemos que debe tener
+		double	perimetroEsperada2= 6.403;
+		assertEquals(perimetroEsperada2, perimetroObtenida2);
+	}
+}

@@ -1,0 +1,34 @@
+package tests;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import clases.TrianguloRectangulo;
+
+class testTrianguloRectangulo {
+
+	@Test
+	void testArea() {
+		TrianguloRectangulo t1= new TrianguloRectangulo();
+		//Calculamos el area que nos da el metodo
+		double areaObtenida1 = t1.calcularArea(); 
+		//Hardcodeamos el area que sabemos que debe tener
+		double	areaEsperada1= 0.5;
+		assertEquals(areaEsperada1, areaObtenida1);
+		TrianguloRectangulo t2= new TrianguloRectangulo(4,5);
+		//Calculamos el area que nos da el metodo
+		double areaObtenida2 = t2.calcularArea(); 
+		//Hardcodeamos el area que sabemos que debe tener
+		double	areaEsperada2= 0.5;
+		assertEquals(areaEsperada2, areaObtenida2);
+	}
+
+	void testHipotenusa() {
+		fail("Not yet implemented");
+	}
+	
+	void testPerimetro() {
+		fail("Not yet implemented");
+	}
+}
